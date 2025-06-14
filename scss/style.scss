@@ -1,19 +1,13 @@
 @import "./utilidades/Variables";
- 
- // Extends (no tengo repetidos, ejecuto uno pero se entiende =))
- %FlexComp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
+@import "./utilidades/Extends";
 
  /* Reset */
  body, h1, h2, h3, p, ul, li, figure, figcaption {
-    margin: 0;
-    padding: 0;
-  }
+   margin: 0;
+   padding: 0;
+ }
   
-  body {
+    body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: $fondoColorBody;
@@ -130,9 +124,6 @@
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
-
-
-  /* responsive */
 @media (max-width: 768px) {
   
 nav ul {

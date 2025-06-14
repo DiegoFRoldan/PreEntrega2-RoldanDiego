@@ -124,7 +124,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* responsive */
 @media (max-width: 768px) {
   nav ul {
     /* flex-direction: column; */
