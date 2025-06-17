@@ -1,0 +1,39 @@
+ header {
+    background-color: $fondoColorHeader;
+    color: $fondoBlanco;
+    padding: 1rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  nav {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+  }
+  
+  nav a {
+    color: $fondoBlanco;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+  }
+
+  nav a.active, nav a:hover, nav a:focus {
+    background-color: #007BFF;
+    border-radius: 4px;
+    color: $fondoBlanco;
+  }
+
+  nav a.active {
+    background-color: #007BFF;
+  }
