@@ -4,29 +4,6 @@
   align-items: center;
 }
 
-/* Reset */
-body, h1, h2, h3, p, ul, li, figure, figcaption {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: rgb(0, 0, 0);
-  padding-bottom: 60px; /* footer */
-}
-
-a {
-  text-decoration: none;
-  color: #007BFF;
-}
-
-a:hover, a:focus {
-  text-decoration: underline;
-}
-
 header {
   background-color: #004080;
   color: rgb(250, 249, 249);
@@ -64,6 +41,39 @@ nav a.active, nav a:hover, nav a:focus {
 
 nav a.active {
   background-color: #007BFF;
+}
+
+body, h1, h2, h3, p, ul, li, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: rgb(0, 0, 0);
+  padding-bottom: 60px; /* footer */
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #004080;
+  color: rgb(250, 249, 249);
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
 }
 
 main {
@@ -113,15 +123,12 @@ iframe {
   border-radius: 8px;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #004080;
-  color: rgb(250, 249, 249);
-  text-align: center;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
+@media only screen and (min-width: 800px) {
+  .flex-conteiner-img {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
