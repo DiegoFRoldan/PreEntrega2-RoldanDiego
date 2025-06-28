@@ -48,3 +48,15 @@
     border: none;
     border-radius: 8px;
   }
+
+  @media only screen and (min-width: 800px){
+    .flex-conteiner-img{
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
+
+
+    }
+
+
+  }
